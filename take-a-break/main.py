@@ -5,8 +5,11 @@ import time
 url = 'https://www.youtube.com/watch?v=HtcLGfKnRVw'
 
 # Initializes the counter for the number of times to repet the sequence
-number_of_breaks = 1;
-while number_of_breaks < 4:
-    time.sleep(10)
+number_of_breaks = 0
+total_breaks = 3
+work_time = 5       # in seconds
+print "This program started on "+time.ctime()
+while number_of_breaks < total_breaks:
+    time.sleep(work_time)
     webbrowser.open(url)
     number_of_breaks = number_of_breaks + 1
