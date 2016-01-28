@@ -8,8 +8,10 @@ url = 'https://www.youtube.com/watch?v=HtcLGfKnRVw'
 number_of_breaks = 0
 total_breaks = 3
 work_time = 45       # in minutes
+break_time = 5       # in minutes
 print "This program started on "+time.ctime()
 while number_of_breaks < total_breaks:
     time.sleep(work_time*60)
     webbrowser.open(url)
+    time.sleep(break_time*60)
     number_of_breaks = number_of_breaks + 1
